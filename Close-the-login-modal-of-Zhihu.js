@@ -13,13 +13,16 @@
 (function() {
     'use strict';
 
-    function removeElement(){
-        var ele = document.querySelector('.Modal-wrapper');
-        ele.parentNode.removeChild(ele);
+    function closeLoginModal(){
+    var eleHTML = document.querySelector('html');
+    var eleModal = document.querySelector('.Modal-wrapper');
+
+        eleHTML.style="";//恢复页面滚动
+        eleModal.parentNode.removeChild(eleModal);
         console.log('Removed Zhihu Login Modal');
     }
 
-    var timer = window.setTimeout(removeElement,100);
+    var timer = window.setTimeout(closeLoginModal,300);
     //window.clearTimeout(timer);// 清除定时器
 })();
 
