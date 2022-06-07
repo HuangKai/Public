@@ -7,7 +7,7 @@
 // @match        https://*.zhihu.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=zhihu.com
 // @grant        none
-// @updateURL    none
+// @updateURL    https://github.com/HuangKai/Public/blob/main/Close-the-login-modal-of-Zhihu.js
 // ==/UserScript==
 
 (function() {
